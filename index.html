@@ -1,93 +1,808 @@
-<!DOCTYPE html><html><head>
-		<title>Shubhangi Singh</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhangi Singh - Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-				<!-- Main -->
-					<section id="main">
-					  
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt=""></span>
-							<h1>Shubhangi Singh</h1>
-							<p>Full Stack Developer || AWS Certified || DevOps Enthusiast</p>
-						</header>
-				
-					<!--	<hr>-->
-					<!--	<h2>Send ME A Query</h2>-->
-					
-					<!--	<form  action="mailto:shubhangi.mca09@gmail.com">-->
-					<!--		<div class="field">-->
-					<!--			<input type="text" name="name" id="name" placeholder="Name">-->
-					<!--		</div>-->
-					<!--		<div class="field">-->
-					<!--			<input type="email" name="email" id="email" placeholder="Email">-->
-					<!--		</div>-->
-					<!--		<div class="field">-->
-					<!--			<div class="select-wrapper">-->
-					<!--				<select name="department" id="department">-->
-					<!--					<option value="">Counsult</option>-->
-					<!--					<option value="sales">Sales</option>-->
-					<!--					<option value="tech">Tech Support</option>-->
-					<!--					<option value="null">/dev/null</option>-->
-					<!--				</select>-->
-					<!--			</div>-->
-					<!--		</div>-->
-					<!--		<div class="field">-->
-					<!--			<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>-->
-					<!--		</div>-->
-							<!--<div class="field">-->
-							<!--	<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>-->
-							<!--</div>-->
-							<!--<div class="field">-->
-							<!--	<label>But are you a robot?</label>-->
-							<!--	<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>-->
-							<!--	<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>-->
-							<!--</div>-->
-					<!--		<ul class="actions">-->
-					<!--		  <li><input type="submit" value="Submit" class="button"></li>-->
-					<!--		</ul>-->
-					<!--	</form>-->
-					<!--<hr>-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/shubhangisingh" target="_blank" class="fa-github">Github</a></li>
-								<li><a href="https://www.linkedin.com/in/shubhangisinghmca09" target="_blank" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="https://codeshutters.wordpress.com/" target="_blank" class="fa-wordpress">Wordpress</a></li>
-								<li><a href="https://codeshutters.hashnode.dev/" target="_blank" class="fa-hashnode">Hashnode</a></li>
-								<!--<li><a href="http://meta.stackoverflow.com/users/6412498/shubhangi-singh?tab=topactivity" target="_blank" class="fa-stack-overflow">Stack Overflow</a></li>-->
-							</ul>
-						 <!--    <a href="	https://raw.githubusercontent.com/shubhangisingh/shubhangisingh.github.io/master/assets/resume.docx" target="_blank" class = 'button'>Download Resume</a>-->
-						</footer>
-					</section>
-					
-					
+        .slide {
+            background: white;
+            border-radius: 15px;
+            padding: 60px;
+            margin: 30px 0;
+            min-height: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            position: relative;
+            animation: slideIn 0.5s ease-out;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>© Shubhangi Singh</li>
-							<li>Cloud Developer</li>
-						</ul>
-					</footer>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-			</div>
+        h1 {
+            color: #667eea;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-					<script src="index.html.0.js"></script>
+        h2 {
+            color: #667eea;
+            font-size: 36px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 15px;
+        }
 
+        h3 {
+            color: #667eea;
+            font-size: 24px;
+            margin: 25px 0 15px 0;
+        }
 
-	
-</body></html>
+        .title-slide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 60px;
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            color: white;
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .title-slide .tagline {
+            font-size: 28px;
+            color: #ffd700;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .title-slide .subtitle {
+            font-size: 22px;
+            color: rgba(255,255,255,0.95);
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .card ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .card li {
+            color: white;
+            margin: 8px 0;
+        }
+
+        .impact-box {
+            background: #f0f4ff;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .impact-box strong {
+            color: #667eea;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .impact-box p {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .metric {
+            text-align: center;
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .metric-value {
+            font-size: 52px;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 15px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .skill-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #78350f;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Horizontal Timeline Styles */
+        .horizontal-timeline {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .timeline-track {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #cbd5e0 0%, #667eea 100%);
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+
+        .career-stage {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .career-dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid #cbd5e0;
+            box-shadow: 0 0 0 6px rgba(203, 213, 224, 0.2);
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .active-dot {
+            border-color: #667eea;
+            box-shadow: 0 0 0 6px rgba(102, 126, 234, 0.2);
+            width: 28px;
+            height: 28px;
+        }
+
+        .career-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            min-width: 160px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .career-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+
+        .active-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .active-card .career-year,
+        .active-card .career-role,
+        .active-card .career-company,
+        .active-card .career-location {
+            color: white;
+        }
+
+        .career-year {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .career-role {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .career-company {
+            color: #475569;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .career-location {
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .cert-badge {
+            background: #dcfce7;
+            border: 2px solid #22c55e;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .cert-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .cert-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #166534;
+            margin-bottom: 8px;
+        }
+
+        .cert-date {
+            color: #15803d;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .cert-desc {
+            margin-top: 15px;
+            color: #4b5563;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .project-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: #667eea;
+        }
+
+        .project-title {
+            font-size: 24px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            background: #ede9fe;
+            color: #6b21a8;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 13px;
+            display: inline-block;
+            margin: 5px 5px 15px 0;
+            font-weight: 600;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #475569;
+            font-size: 17px;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav-button:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-indicator {
+            display: inline-block;
+            margin: 0 15px;
+            color: #667eea;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        @media print {
+            .navigation { display: none; }
+            .slide { page-break-after: always; margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <div class="slide title-slide" data-slide="1">
+            <h1>Shubhangi Singh</h1>
+            <div class="tagline">Full Stack Engineer | DevOps Expert | Cloud Architect</div>
+            <div class="subtitle">13+ Years of Excellence in Building Scalable Applications<br>& Transforming Development Workflows</div>
+            <div class="contact-info">
+                📍 Bengaluru, India<br>
+                🌐 Portfolio: <a href="https://shubhangisingh.github.io/" target="_blank">shubhangisingh.github.io</a><br>
+                🌐 GitHub: <a href="https://github.com/shubhangisingh" target="_blank">shubhangisingh</a><br>
+                📝 Blog: <a href="https://codeshutters.hashnode.dev/" target="_blank">codeshutters.hashnode.dev</a><br>
+                💼 LinkedIn <a href="https://www.linkedin.com/in/shubhangisinghmca09/" target="_blank">shubhangisinghmca09</a><br>
+            </div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide" data-slide="2">
+            <h2>Professional Summary</h2>
+            
+            <div class="two-column">
+                <div class="metric">
+                    <span class="metric-value">13+</span>
+                    <span class="metric-label">Years Experience</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">2</span>
+                    <span class="metric-label">Cloud Certifications</span>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 50px;">
+                Passionate Full Stack Engineer specializing in Ruby on Rails, Cloud Architecture (AWS/GCP),<br>and DevOps automation with proven leadership in delivering high-impact solutions
+            </div>
+
+            <div class="two-column" style="margin-top: 40px;">
+                <div class="card">
+                    <h3>🎯 Core Strengths</h3>
+                    <ul>
+                        <li>Full Stack Development (Ruby on Rails)</li>
+                        <li>Cloud Architecture (AWS & GCP)</li>
+                        <li>DevOps & CI/CD Implementation</li>
+                        <li>Team Leadership & Mentoring</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>💡 Key Expertise</h3>
+                    <ul>
+                        <li>Containerization (Docker, Kubernetes)</li>
+                        <li>Infrastructure as Code (Terraform)</li>
+                        <li>Open Source Contributions</li>
+                        <li>Healthcare & Enterprise Solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Career Timeline -->
+        <div class="slide" data-slide="3">
+            <h2>Career Journey Timeline</h2>
+            
+            <div class="horizontal-timeline">
+                <div class="timeline-track"></div>
+                
+                <div class="career-stage">
+                    <div class="career-dot"></div>
+                    <div class="career-card">
+                        <div class="career-year">2012-2013</div>
+                        <div class="career-role">Junior Developer</div>
+                        <div class="career-company">Saviance Technologies</div>
+                        <div class="career-location">Gurugram</div>
+                    </div>
+                </div>
+
+                <div class="career-stage">
+                    <div class="career-dot"></div>
+                    <div class="career-card">
+                        <div class="career-year">2013-2015</div>
+                        <div class="career-role">Developer</div>
+                        <div class="career-company">Softelixir</div>
+                        <div class="career-location">New Delhi</div>
+                    </div>
+                </div>
+
+                <div class="career-stage">
+                    <div class="career-dot"></div>
+                    <div class="career-card">
+                        <div class="career-year">2015-2016</div>
+                        <div class="career-role">Senior Developer</div>
+                        <div class="career-company">UnitedHealth Group</div>
+                        <div class="career-location">Noida</div>
+                    </div>
+                </div>
+
+                <div class="career-stage">
+                    <div class="career-dot"></div>
+                    <div class="career-card">
+                        <div class="career-year">2016-2017</div>
+                        <div class="career-role">Senior Developer</div>
+                        <div class="career-company">GMO Globalsign</div>
+                        <div class="career-location">New Delhi</div>
+                    </div>
+                </div>
+
+                <div class="career-stage">
+                    <div class="career-dot"></div>
+                    <div class="career-card">
+                        <div class="career-year">2017-2022</div>
+                        <div class="career-role">Team Lead</div>
+                        <div class="career-company">HCL Technologies</div>
+                        <div class="career-location">Noida</div>
+                    </div>
+                </div>
+
+                <div class="career-stage">
+                    <div class="career-dot active-dot"></div>
+                    <div class="career-card active-card">
+                        <div class="career-year">2022-Present</div>
+                        <div class="career-role">Technical Team Lead</div>
+                        <div class="career-company">Accenture</div>
+                        <div class="career-location">Bengaluru</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                From Junior Developer to Technical Team Lead: A 13-Year Journey of Continuous Growth
+            </div>
+        </div>
+
+        <!-- Slide 4: Key Achievements -->
+        <div class="slide" data-slide="4">
+            <h2>Measurable Impact & Achievements</h2>
+            
+            <div class="impact-box">
+                <strong>🚀 95% Reduction in Setup Time</strong>
+                <p>Implemented Docker containerization, reducing developer environment setup from <strong>1 week to 3 hours</strong> at HCL Technologies</p>
+            </div>
+
+            <div class="impact-box">
+                <strong>⚡ 83% Faster Deployments</strong>
+                <p>Collaborated with DevOps team to implement CI/CD pipeline, cutting deployment time from <strong>3 hours to 30 minutes</strong></p>
+            </div>
+
+            <div class="impact-box">
+                <strong>🔄 Major Legacy System Modernization</strong>
+                <p>Successfully led Rails application upgrade from <strong>Rails 3 to Rails 6</strong>, modernizing the entire tech stack</p>
+            </div>
+
+            <div class="impact-box">
+                <strong>🌟 Open Source Contributions</strong>
+                <p>Active contributor to <strong>googleapis/google-cloud-ruby</strong> - Enhanced SDK functionality, improved documentation, and added comprehensive test coverage</p>
+            </div>
+
+            <div class="impact-box">
+                <strong>🎓 Team Development</strong>
+                <p>Trained freshers on Ruby on Rails at UnitedHealth Group, building next-generation development talent</p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Current Role Highlights -->
+        <div class="slide" data-slide="5">
+            <h2>Current Role: Accenture (2022-Present)</h2>
+            <div style="font-size: 20px; color: #667eea; margin-bottom: 30px;">Technical Team Lead | Bengaluru, India</div>
+            
+            <div class="three-column">
+                <div class="card">
+                    <h3>GCP SDK Contributions</h3>
+                    <p>Contributing to Google Cloud Platform Ruby SDK libraries, enhancing functionality for enterprise clients</p>
+                </div>
+                <div class="card">
+                    <h3>Ruby Gems Enhancement</h3>
+                    <p>Developing and enhancing features in Ruby Gems based on specific client requirements</p>
+                </div>
+                <div class="card">
+                    <h3>Healthcare Applications</h3>
+                    <p>Maintaining and enhancing existing healthcare web applications serving critical business needs</p>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 50px;">
+                Leading technical initiatives at a global consulting leader, delivering cloud-native solutions
+            </div>
+
+            <h3 style="margin-top: 40px;">Key Responsibilities</h3>
+            <ul>
+                <li>Technical leadership for cross-functional development teams</li>
+                <li>Architecture and design decisions for cloud-based solutions</li>
+                <li>Code quality assurance and best practices implementation</li>
+                <li>Client collaboration and requirement analysis</li>
+                <li>Mentoring team members on cloud and DevOps practices</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6: HCL Technologies Experience -->
+        <div class="slide" data-slide="6">
+            <h2>HCL Technologies (2017-2022)</h2>
+            <div style="font-size: 20px; color: #667eea; margin-bottom: 30px;">Team Lead | Noida, India | 5 Years</div>
+            
+            <h3>Major Initiatives & Impact</h3>
+            
+            <div class="two-column">
+                <div class="card">
+                    <h3>Legacy Modernization</h3>
+                    <p><strong>Project:</strong> Rails 3 to Rails 6 Upgrade</p>
+                    <ul>
+                        <li>Led complete application modernization</li>
+                        <li>Improved performance & security</li>
+                        <li>Zero downtime migration</li>
+                        <li>Enhanced developer experience</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>DevOps Transformation</h3>
+                    <p><strong>Impact:</strong> 95% Time Reduction</p>
+                    <ul>
+                        <li>Docker containerization</li>
+                        <li>Eliminated environment issues</li>
+                        <li>Setup: 1 week → 3 hours</li>
+                        <li>Rapid developer onboarding</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="impact-box" style="margin-top: 30px;">
+                <strong>CI/CD Pipeline Implementation</strong>
+                <p>Worked collaboratively with DevOps team to automate the entire deployment pipeline. <strong>Results:</strong> Deployment time reduced from 3 hours to 30 minutes (83% improvement), eliminated manual errors, enabled frequent releases, and improved overall code quality through automated testing gates.</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Technical Stack -->
+        <div class="slide" data-slide="7">
+            <h2>Technical Expertise</h2>
+            
+            <h3>💎 Core Technologies</h3>
+            <div class="skill-grid">
+                <div class="skill-badge">Ruby on Rails</div>
+                <div class="skill-badge">Ruby</div>
+                <div class="skill-badge">JavaScript</div>
+                <div class="skill-badge">jQuery</div>
+                <div class="skill-badge">HTML/CSS</div>
+                <div class="skill-badge">GoLang</div>
+                <div class="skill-badge">React JS</div>
+                <div class="skill-badge">Python</div>
+            </div>
+
+            <div class="two-column" style="margin-top: 40px;">
+                <div>
+                    <h3>☁️ Cloud & Infrastructure</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">AWS</div>
+                        <div class="skill-badge">Google Cloud Platform</div>
+                        <div class="skill-badge">Docker</div>
+                        <div class="skill-badge">Kubernetes</div>
+                        <div class="skill-badge">Terraform</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>🔧 DevOps & Tools</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Jenkins</div>
+                        <div class="skill-badge">CI/CD</div>
+                        <div class="skill-badge">RSpec</div>
+                        <div class="skill-badge">Cucumber</div>
+                        <div class="skill-badge">Git</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">💾 Databases</h3>
+            <div class="skill-grid">
+                <div class="skill-badge">MySQL</div>
+                <div class="skill-badge">PostgreSQL</div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Cloud Certifications -->
+        <div class="slide" data-slide="8">
+            <h2>Professional Certifications</h2>
+            
+            <div class="two-column" style="margin-top: 50px;">
+                <div class="cert-badge" style="border-color: #4285f4; background: #e8f0fe;">
+                    <div class="cert-icon">☁️</div>
+                    <div class="cert-name" style="color: #1a73e8;">GCP Associate Cloud Engineer</div>
+                    <div class="cert-date" style="color: #1967d2;">Valid Until: August 2025</div>
+                    <div class="cert-desc">Demonstrates expertise in deploying applications, monitoring operations, and managing enterprise solutions on Google Cloud Platform</div>
+                </div>
+
+                <div class="cert-badge" style="border-color: #ff9900; background: #fff3e0;">
+                    <div class="cert-icon">☁️</div>
+                    <div class="cert-name" style="color: #ff6f00;">AWS Certified Developer Associate</div>
+                    <div class="cert-date" style="color: #f57c00;">Achieved: September 2023</div>
+                    <div class="cert-desc">Validates proficiency in developing, deploying, and debugging cloud-based applications using AWS services</div>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 50px;">
+                Dual Cloud Certified: Expertise in both major cloud platforms (AWS & GCP)
+            </div>
+
+            <h3 style="margin-top: 30px; text-align: center;">Commitment to Continuous Learning</h3>
+            <p style="text-align: center; color: #64748b; margin-top: 15px; font-size: 18px;">
+                Active pursuit of certifications demonstrates dedication to staying current with evolving cloud technologies and industry best practices
+            </p>
+        </div>
+
+        <!-- Slide 9: Featured Projects -->
+        <div class="slide" data-slide="9">
+            <h2>Featured Projects & Contributions</h2>
+            
+            <div class="project-card">
+                <div class="project-title">🌐 Open Source: Google Cloud Ruby SDK</div>
+                <span class="tech-stack">Ruby</span>
+                <span class="tech-stack">GCP</span>
+                <span class="tech-stack">Open Source</span>
+                <span class="tech-stack">SDK Development</span>
+                
+                <h3 style="margin-top: 25px; color: #667eea;">Impact & Contributions</h3>
+                <ul>
+                    <li>Enhanced Ruby SDK functionality for Google Cloud Platform, benefiting developers globally</li>
+                    <li>Submitted pull requests and collaborated with maintainers to ensure code quality</li>
+                    <li>Improved documentation making it easier for developers to adopt GCP services</li>
+                    <li>Added comprehensive test cases ensuring robust functionality</li>
+                    <li><strong>GitHub PR:</strong> github.com/googleapis/google-cloud-ruby/pull/27479</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">🔐 TrustLogin - IDaaS Platform</div>
+                <span class="tech-stack">Ruby on Rails</span>
+                <span class="tech-stack">MySQL</span>
+                <span class="tech-stack">SAML</span>
+                <span class="tech-stack">SSO</span>
+                <span class="tech-stack">Apache</span>
+                
+                <h3 style="margin-top: 25px; color: #667eea;">Platform Overview</h3>
+                <p style="color: #475569; margin: 15px 0;">Identity as a Service (IDaaS) platform developed at GMO Globalsign to provide comprehensive Single Sign-On and Identity Management solutions</p>
+                
+                <h3 style="color: #667eea;">Key Features Implemented</h3>
+                <ul>
+                    <li>Single Sign-On (SSO) enabling users to access multiple services with one login</li>
+                    <li>SAML-based identity provider integration for enterprise services</li>
+                    <li>Automated credential management with autofill for form-based services</li>
+                    <li>Basic Authentication support for legacy enterprise applications</li>
+                    <li
